@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheBigProject">
         <activity
+            android:name="view.leaderBord"
+            android:exported="false" />
+        <activity
+            android:name="view.sign_up"
+            android:exported="true" />
+        <activity
             android:name="view.PlayingField"
             android:exported="false" />
         <activity

@@ -16,11 +16,44 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/PlusToCost"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:text="+1"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/MinusToCost"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:text="-1"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/PointCounter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="   0"
+                android:textSize="40dp" />
+        </LinearLayout>
     </LinearLayout>
 
     <TableLayout
@@ -74,6 +107,30 @@
 
         </TableRow>
     </TableLayout>
+
+    <Button
+        android:id="@+id/turnEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="290dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/turnEnd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="159dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/turnEnd"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

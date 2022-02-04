@@ -1,27 +1,36 @@
 package model;
 
+import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
 public class Card {
 
     private int power;
-    private final int cost;
+
     private String position;
+    private  String color;
     private final ImageView cardImage;
+    private String effect;
 
 
-    public Card(int power, int cost, String position, ImageView cardImage) {
+    public Card(int power, String position, ImageView cardImage, String color, String effect) {
         this.power = power;
-        this.cost = cost;
+        this.effect = effect;
         this.position = position;
         this.cardImage = cardImage;
+        this.color = color;
+    }
+
+
+
+    public String getEffect() { return effect; }
+
+    public String getColor() {
+        return color;
     }
 
     public ImageView getCardImage() {
         return cardImage;
-    }
-    public int getCost() {
-        return cost;
     }
 
     public int getPower() {
